@@ -1,0 +1,16 @@
+
+
+spring:
+  application:
+    name: registry-server
+  profiles:
+    active: dev        # this selects registry-server-dev.yml from Config Server
+  cloud:
+    config:
+#      uri: http://localhost:8888  # Config Server URL
+      import: config-server:http://localhost:8888
+      import-check:
+        enabled: false
+      username: admin      # Config Server username
+      password: admin   # Config Server password
+      fail-fast: true

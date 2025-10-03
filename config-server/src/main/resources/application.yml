@@ -11,3 +11,9 @@ spring:
     user:
       name: admin
       password: $2a$12$Tb6ZxQsE24VFas5Nmaa8Ou6cQahanuBCQHaEnIVx5zUf1NMa2QpwO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
