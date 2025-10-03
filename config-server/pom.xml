@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.cyber009.sb3m</groupId>
 	<artifactId>config-server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>config-server</name>
-	<description>Spring Cloud Config Server for Library API</description>
+	<description>Spring Cloud Config Server for sb3m API</description>
 	<url/>
 	<licenses>
 		<license/>
