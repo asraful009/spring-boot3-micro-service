@@ -4,9 +4,16 @@ spring:
     name: gateway-server
   profiles:
     active: dev        # this selects registry-server-dev.yml from Config Server
+  config:
+    import: "optional:configserver:http://localhost:8888"
   cloud:
     config:
-      uri: http://localhost:8888  # Config Server URL
-      username: admin      # Config Server username
-      password: admin   # Config Server password
-      fail-fast: true
+      uri: http://localhost:8888
+      username: admin
+      password: admin
+      fail-fast: false  # Set to true in production
+      retry:
+        initial-interval: 1000
+        max-attempts: 6
+        max-interval: 2000
+        multiplier: 1.1
