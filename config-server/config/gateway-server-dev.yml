@@ -5,13 +5,9 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: user-service
-          uri: http://localhost:8081
+        - id: organization-service
+          uri: http://localhost:9102
           predicates:
-            - Path=/users/**
+            - Path=/organizations/**
           filters:
-            - RewritePath=/users/(?<segment>.*), /${segment}
-        - id: order-service
-          uri: http://localhost:8082
-          predicates:
-            - Path=/orders/**
+            - RewritePath=/organizations/(?<segment>.*), /${segment}

@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "OrganizationServiceApplication",
+      "request": "launch",
+      "mainClass": "com.cyber009.sb3m.organization.OrganizationServiceApplication",
+      "projectName": "com.cyber009.sb3m-organization-service"
+    },
+    {
+      "type": "java",
       "name": "OrganizationApplication",
       "request": "launch",
       "mainClass": "com.cyber009.sb3m.organization.OrganizationApplication",
@@ -57,6 +64,16 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.cyber009.sb3m.common.CommonLibApplication",
       "projectName": "common-lib",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-GatewayServerApplication<com.cyber009.sb3m-gateway-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.cyber009.sb3m.gatewayserver.GatewayServerApplication",
+      "projectName": "com.cyber009.sb3m-gateway-server",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
