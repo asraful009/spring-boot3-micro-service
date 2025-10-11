@@ -1,4 +1,4 @@
-package com.cyber009.sb3m.config_server;
+package com.cyber009.sb3m.configserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
