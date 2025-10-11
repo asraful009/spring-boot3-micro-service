@@ -49,6 +49,16 @@
       "projectName": "organization-service",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-CommonLibApplication<common-lib>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.cyber009.sb3m.common.CommonLibApplication",
+      "projectName": "common-lib",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
