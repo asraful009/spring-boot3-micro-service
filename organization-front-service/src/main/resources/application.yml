@@ -1,6 +1,7 @@
+
 spring:
   application:
-    name: organization-service
+    name: organization-front-service
   profiles:
       active: dev        # this selects registry-server-dev.yml from Config Server
   config:

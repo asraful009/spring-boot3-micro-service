@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cyber009.sb3m</groupId>
-	<artifactId>organization-service</artifactId>
-	<version>0.0.1</version>
-	<name>organization-service</name>
-	<description>Spring Cloud Organization Service for sb3m API</description>
+	<artifactId>organization-front-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>organization-front-service</name>
+	<description>Spring Cloud Organization Front Service for sb3m API</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -62,11 +62,6 @@
 			<groupId>org.springframework.amqp</groupId>
 			<artifactId>spring-rabbit-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.cyber009.sb3m</groupId>
-			<artifactId>common-lib</artifactId>
-			<version>0.0.1</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>

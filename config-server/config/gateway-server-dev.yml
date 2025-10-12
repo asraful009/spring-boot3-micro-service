@@ -5,7 +5,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: organization-service
+        - id: organization-front-service
           uri: http://localhost:9102
           predicates:
             - Path=/organizations/**
