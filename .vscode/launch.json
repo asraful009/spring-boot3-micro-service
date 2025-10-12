@@ -1,5 +1,13 @@
 {
   "configurations": [
+    
+    {
+      "type": "java",
+      "name": "OrganizationBackServiceApplication",
+      "request": "launch",
+      "mainClass": "com.cyber009.sb3m.organization.back.OrganizationBackServiceApplication",
+      "projectName": ""
+    },
     {
       "type": "java",
       "name": "OrganizationServiceApplication",
@@ -84,6 +92,26 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.cyber009.sb3m.organization.front.OrganizationFrontServiceApplication",
       "projectName": "organization-front-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-OrganizationBackServiceApplication<organization-back-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.cyber009.sb3m.organization.back.OrganizationBackServiceApplication",
+      "projectName": "organization-back-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-OrganizationBackServiceApplication<organization-back-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.cyber009.sb3m.organization_back_service.OrganizationBackServiceApplication",
+      "projectName": "organization-back-service",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }

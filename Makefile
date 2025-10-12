@@ -1,6 +1,18 @@
 
 
-.PHONY: all config-server registry-server gateway-server common-lib organization-front-service help
+.PHONY: all docker-up docker-down docker-build config-server registry-server gateway-server common-lib organization-front-service help
+
+docker-build:
+	@echo "Building all microservice Docker images..."
+	@docker compose build
+
+docker-up:
+	@echo "Starting all containers..."
+	@docker compose up -d
+
+docker-down:
+	@echo "Stopping all containers..."
+	@docker compose down
 
 config-server:
 	@cd config-server && \
@@ -32,6 +44,9 @@ help:
 	@echo ""
 	@echo "Available commands:"
 	@echo ""
+	@echo "  make docker-build              → Build all Docker images"
+	@echo "  make docker-up                 → Start all containers (with RabbitMQ)"
+	@echo "  make docker-down               → Stop all containers"
 	@echo "  make config-server             → Build the Run Config Server"
 	@echo "  make registry-server           → Build the Run Registry Server"
 	@echo "  make gateway-server            → Build the Run Gateway Server"

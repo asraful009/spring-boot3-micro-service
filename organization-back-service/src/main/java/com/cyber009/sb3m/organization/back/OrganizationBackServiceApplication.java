@@ -1,4 +1,4 @@
-package com.cyber009.sb3m.organization_back_service;
+package com.cyber009.sb3m.organization.back;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
