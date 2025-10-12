@@ -1,27 +1,5 @@
 {
   "configurations": [
-    
-    {
-      "type": "java",
-      "name": "OrganizationBackServiceApplication",
-      "request": "launch",
-      "mainClass": "com.cyber009.sb3m.organization.back.OrganizationBackServiceApplication",
-      "projectName": ""
-    },
-    {
-      "type": "java",
-      "name": "OrganizationServiceApplication",
-      "request": "launch",
-      "mainClass": "com.cyber009.sb3m.organization.OrganizationServiceApplication",
-      "projectName": "com.cyber009.sb3m-organization-service"
-    },
-    {
-      "type": "java",
-      "name": "OrganizationApplication",
-      "request": "launch",
-      "mainClass": "com.cyber009.sb3m.organization.OrganizationApplication",
-      "projectName": ""
-    },
     {
       "type": "java",
       "name": "Spring Boot-ConfigServerApplication<config-server>",
@@ -30,19 +8,7 @@
       "mainClass": "com.cyber009.sb3m.configserver.ConfigServerApplication",
       "projectName": "config-server",
       "args": "",
-      "envFile": "${workspaceFolder}/.env",
-      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=40109 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=config-server"
-    },
-    {
-      "type": "java",
-      "name": "Spring Boot-RegistryServerApplication<registry-server>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.cyber009.sb3m.registryserver.RegistryServerApplication",
-      "projectName": "registry-server",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env",
-      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=37561 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=registry-server"
+      "envFile": "${workspaceFolder}/.env"
     },
     {
       "type": "java",
@@ -52,36 +18,25 @@
       "mainClass": "com.cyber009.sb3m.gatewayserver.GatewayServerApplication",
       "projectName": "gateway-server",
       "args": "",
-      "envFile": "${workspaceFolder}/.env",
-      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=37653 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=gateway-server"
+      "envFile": "${workspaceFolder}/.env"
     },
     {
       "type": "java",
-      "name": "Spring Boot-OrganizationServiceApplication<organization-service>",
+      "name": "Spring Boot-RegistryServerApplication<registry-server>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "mainClass": "com.cyber009.sb3m.organization.OrganizationServiceApplication",
-      "projectName": "organization-service",
+      "mainClass": "com.cyber009.sb3m.registryserver.RegistryServerApplication",
+      "projectName": "registry-server",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     },
     {
       "type": "java",
-      "name": "Spring Boot-CommonLibApplication<common-lib>",
+      "name": "Spring Boot-OrganizationBackServiceApplication<organization-back-service>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "mainClass": "com.cyber009.sb3m.common.CommonLibApplication",
-      "projectName": "common-lib",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
-    },
-    {
-      "type": "java",
-      "name": "Spring Boot-GatewayServerApplication<com.cyber009.sb3m-gateway-server>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.cyber009.sb3m.gatewayserver.GatewayServerApplication",
-      "projectName": "com.cyber009.sb3m-gateway-server",
+      "mainClass": "com.cyber009.sb3m.organization.back.OrganizationBackServiceApplication",
+      "projectName": "organization-back-service",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     },
@@ -92,26 +47,6 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.cyber009.sb3m.organization.front.OrganizationFrontServiceApplication",
       "projectName": "organization-front-service",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
-    },
-    {
-      "type": "java",
-      "name": "Spring Boot-OrganizationBackServiceApplication<organization-back-service>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.cyber009.sb3m.organization.back.OrganizationBackServiceApplication",
-      "projectName": "organization-back-service",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
-    },
-    {
-      "type": "java",
-      "name": "Spring Boot-OrganizationBackServiceApplication<organization-back-service>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.cyber009.sb3m.organization_back_service.OrganizationBackServiceApplication",
-      "projectName": "organization-back-service",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
