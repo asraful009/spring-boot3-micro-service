@@ -1,6 +1,6 @@
 
 
-.PHONY: all config-server registry-server gateway-server common-lib organization-service help
+.PHONY: all config-server registry-server gateway-server common-lib organization-front-service help
 
 config-server:
 	@cd config-server && \
@@ -23,7 +23,7 @@ common-lib:
 	@cd common-lib && \
 	 ./mvnw clean install
 
-organization-service:
+organization-front-service:
 	@cd common-lib && \
 	 ./mvnw clean install
 
