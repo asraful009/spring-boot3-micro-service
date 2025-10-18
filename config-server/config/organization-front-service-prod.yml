@@ -1,2 +1,9 @@
 server:
   port: 9102
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
