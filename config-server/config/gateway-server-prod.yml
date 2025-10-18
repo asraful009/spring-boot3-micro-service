@@ -1,0 +1,13 @@
+server:
+  port: 9081
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: organization-service
+          uri: http://localhost:9102
+          predicates:
+            - Path=/organizations/**
+          filters:
+            - RewritePath=/organizations/(?<segment>.*), /${segment}

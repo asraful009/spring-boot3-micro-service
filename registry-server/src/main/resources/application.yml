@@ -1,0 +1,28 @@
+
+eureka:
+  client:
+    register-with-eureka: false  # Registry itself doesn’t register
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
+    
+spring:
+  application:
+    name: registry-server
+  profiles:
+    active: dev        # this selects registry-server-dev.yml from Config Server
+  config:
+    import: "optional:configserver:http://localhost:8888"
+  cloud:
+    config:
+      uri: http://localhost:8888
+      username: admin
+      password: admin
+      fail-fast: false  # Set to true in production
+      retry:
+        initial-interval: 1000
+        max-attempts: 6
+        max-interval: 2000
+        multiplier: 1.1
