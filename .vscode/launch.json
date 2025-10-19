@@ -2,6 +2,39 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Spring Boot-OrganizationFrontServiceApplication<organization-front-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.cyber009.sb3m.organization.front.OrganizationFrontServiceApplication",
+      "projectName": "organization-front-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=34929 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=organization-front-service"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-GatewayServerApplication<gateway-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.cyber009.sb3m.gatewayserver.GatewayServerApplication",
+      "projectName": "gateway-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=42467 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=gateway-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-RegistryServerApplication<registry-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.cyber009.sb3m.registryserver.RegistryServerApplication",
+      "projectName": "registry-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=42591 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=registry-server"
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-ConfigServerApplication<config-server>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -12,41 +45,11 @@
     },
     {
       "type": "java",
-      "name": "Spring Boot-GatewayServerApplication<gateway-server>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.cyber009.sb3m.gatewayserver.GatewayServerApplication",
-      "projectName": "gateway-server",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
-    },
-    {
-      "type": "java",
-      "name": "Spring Boot-RegistryServerApplication<registry-server>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.cyber009.sb3m.registryserver.RegistryServerApplication",
-      "projectName": "registry-server",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
-    },
-    {
-      "type": "java",
       "name": "Spring Boot-OrganizationBackServiceApplication<organization-back-service>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "mainClass": "com.cyber009.sb3m.organization.back.OrganizationBackServiceApplication",
       "projectName": "organization-back-service",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
-    },
-    {
-      "type": "java",
-      "name": "Spring Boot-OrganizationFrontServiceApplication<organization-front-service>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.cyber009.sb3m.organization.front.OrganizationFrontServiceApplication",
-      "projectName": "organization-front-service",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
