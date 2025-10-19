@@ -44,4 +44,16 @@ public class OfficeController {
       return "Failed to send office data: " + e.getMessage();
     }
   }
+
+  @PostMapping("/send-custom-office")
+  public String sendCustomOfficeMessage(@RequestParam String officeName, 
+                                       @RequestParam String location, 
+                                       @RequestParam String additionalData) {
+    try {
+      messageSenderService.sendCustomOfficeMessage(officeName, location, additionalData);
+      return "Custom office message sent successfully: " + officeName + " - " + location + " - " + additionalData;
+    } catch (Exception e) {
+      return "Failed to send custom office message: " + e.getMessage();
+    }
+  }
 }
