@@ -17,7 +17,7 @@ public class MessageSenderService {
 
     public void sendMessage(String message) {
         try {
-            rabbitTemplate.convertAndSend(RabbitMQConstant.QUEUE_NAME, message);
+            rabbitTemplate.convertAndSend(RabbitMQConstant.EXCHANGE_NAME, RabbitMQConstant.ROUTING_KEY, message);
             log.info("📤 Message sent successfully: {}", message);
         } catch (Exception e) {
             log.error("❌ Failed to send message: {}", message, e);
